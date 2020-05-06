@@ -34,41 +34,49 @@ window.dataLayer = [{
 				}];
 				
 window.dataLayer.push({
-    'event': 'checkout',
     'ecommerce': {
-      'checkout': {
-        'actionField': {'step': 1, 'option': 'Visa'},
-        'products': [
-		{
-          'name': 'Triblend Android T-Shirt',
-          'id': '12345',
-          'price': '15.25',
-          'brand': 'Google',
-          'category': 'Apparel',
-          'variant': 'Gray',
-          'quantity': 1
+    'purchase': {
+      'actionField': {
+        'id': 'T12345',                         // Transaction ID. Required for purchases and refunds.
+        'affiliation': 'Online Store',
+        'revenue': '140.00',                     // Total transaction value (incl. tax and shipping)
+        'tax':'30.00',
+        'shipping': '0.00',
+        'coupon': 'SUMMER_SALE'
+      },
+      'products': [{                            // List of productFieldObjects.
+        	
+		'name': 'Mens TShirt Black',
+        'id': '1',
+        'price': '70.00',
+        'brand': 'Google',
+        'category': 'Apparel',
+        'variant': 'Black',
+        'quantity': 1
+		'coupon': ''                            // Optional fields may be omitted or set to empty string.
+       },
+       {
+		'name': 'Waterproof Bags',
+		'id': '99',
+        'price': '30.00',
+        'brand': 'Google',
+        'category': 'Accessories',
+        'variant': 'Gray',
+        'quantity': 1
        },
 	   {
-          'name': 'Triblend Android T-Shirt',
-          'id': '12345',
-          'price': '15.25',
+	     'name': 'LWomen Top white',
+          'id': '77',
+          'price': '40.00',
           'brand': 'Google',
           'category': 'Apparel',
-          'variant': 'Gray',
+          'variant': 'White',
           'quantity': 1
-       },
-	   {
-          'name': 'Triblend Android T-Shirt',
-          'id': '12345',
-          'price': '15.25',
-          'brand': 'Google',
-          'category': 'Apparel',
-          'variant': 'Gray',
-          'quantity': 1
-       }
-	   ]
-     }
-   }
+	   
+	   
+	   }]
+    }
+  }
   });		
 				
 	</script>	 
@@ -266,11 +274,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							   <div class="cart-item-info">
 								<h3><a href="#"> Mens TShirt Black</a><span>Pickup time:</span></h3>
 								<ul class="qty">
-									<li><p>Min. order value:</p></li>
+									<li><p>Product Price: $70</p></li>
 									<li><p>FREE delivery</p></li>
 								</ul>
 									 <div class="delivery">
-									 <p>Service Charges : $10.00</p>
+									 <p>Tax: $10.00</p>
 									 <span>Delivered in 1-1:30 hours</span>
 									 <div class="clearfix"></div>
 								</div>	
@@ -289,11 +297,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							   <div class="cart-item-info">
 								<h3><a href="#"> Waterproof Bags </a><span>Pickup time:</span></h3>
 								<ul class="qty">
-									<li><p>Min. order value:</p></li>
+									<li><p>Product Price: $30</p></li>
 									<li><p>FREE delivery</p></li>
 								</ul>
 									 <div class="delivery">
-									 <p>Service Charges : $10.00</p>
+									 <p>Tax: $10.00</p>
 									 <span>Delivered in 1-1:30 hours</span>
 									 <div class="clearfix"></div>
 								</div>	
@@ -312,11 +320,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							   <div class="cart-item-info">
 								<h3><a href="#"> Women Top white </a><span>Pickup time:</span></h3>
 								<ul class="qty">
-									<li><p>Min. order value:</p></li>
+									<li><p>Product Price: $40</p></li>
 									<li><p>FREE delivery</p></li>
 								</ul>
 									 <div class="delivery">
-									 <p>Service Charges : $10.00</p>
+									 <p>Tax: $10.00</p>
 									 <span>Delivered in 1-1:30 hours</span>
 									 <div class="clearfix"></div>
 								</div>	
