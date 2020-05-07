@@ -261,6 +261,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								$('.cart-header').fadeOut('slow', function(c){
 									$('.cart-header').remove();
 								});
+								dataLayer.push({
+  'event': 'removeFromCart',
+  'ecommerce': {
+    'remove': {                               // 'remove' actionFieldObject measures.
+      'products': [{                          //  removing a product to a shopping cart.
+          'name': 'Mens TShirt Black',
+          'id': '1',
+          'price': '70.00',
+          'brand': 'Google',
+          'category': 'Apparel',
+          'variant': 'Black',
+          'quantity': 1
+      }]
+    }
+  }
+});
 								});	  
 							});
 					   </script>
@@ -291,6 +307,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									$('.cart-header2').fadeOut('slow', function(c){
 								$('.cart-header2').remove();
 							});
+							dataLayer.push({
+  'event': 'removeFromCart',
+  'ecommerce': {
+    'remove': {                               // 'remove' actionFieldObject measures.
+      'products': [{                          //  removing a product to a shopping cart.
+          'name': 'LWomen Top white',
+          'id': '77',
+          'price': '40.00',
+          'brand': 'Google',
+          'category': 'Apparel',
+          'variant': 'White',
+          'quantity': 1
+      }]
+    }
+  }
+});		
 							});	  
 							});
 					 </script>
@@ -321,6 +353,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									$('.cart-header3').fadeOut('slow', function(c){
 								$('.cart-header3').remove();
 							});
+									dataLayer.push({
+  'event': 'removeFromCart',
+  'ecommerce': {
+    'remove': {                               // 'remove' actionFieldObject measures.
+      'products': [{                          //  removing a product to a shopping cart.
+          'name': 'Waterproof Bags',
+          'id': '99',
+          'price': '30.00',
+          'brand': 'Google',
+          'category': 'Accessories',
+          'variant': 'Gray',
+          'quantity': 1
+      }]
+    }
+  }
+});		
 							});	  
 							});
 					 </script>
